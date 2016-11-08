@@ -4,9 +4,16 @@
 ### 2016.11.08
 初步了解了 Laravel 的 MVC架构. 
 完成了简单 blog 项目(https://github.com/johnlui/Learn-Laravel-5/issues) 中的所有过程(登录、后台编辑、前台评论)都跑通了. 
-代码记录在 https://github.com/Hexor/learnlaravel5 中
+代码记录在 https://github.com/Hexor/learnlaravel5 中.
 
-这个项目中附注的最后的大作业暂时没有进行.
+完成了这个项目之后, 自己能理解 Laravel 框架的一些基础知识了, 包括
+1.  路由: 就是将不同的url请求分配到不同的controller去处理
+2.  Controller: 接收前台发送的一些数据, 并且进行处理, 这些处理有可能是跟Model或者View进行交互, 进行数据的增删查改, 新页面的返回
+3.  Model: 连接整个框架和数据库, 为其他组件提供了一种面向对象的方式来与数据库中的数据进行交互
+4.  View:  可以应用框架提供的模板, 并且将Controller提供的数据填充在页面中, 一起返回到前端显示
+
+这个教学项目中附注的最后的大作业暂时没有进行.
+
 看了laravel-china.org上的初级任务清单, 感觉内容跟blog项目比较类似. 就不再重复一遍了.
 
 打算今天先把 laravel-china.org 上的中级任务清单完成.
