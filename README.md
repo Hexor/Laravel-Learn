@@ -9,14 +9,17 @@
 
 这部分的知识我目前是欠缺的. 所以, 在我直接看项目代码的时候, 大部分的关键字, 语法我基本上都看不懂. 所以还是要先补一下PHP的基础知识.
 
-对于如何入门 Laravel , 找到了一篇还不错的教程. johnlui/Learn-Laravel-5: Issue #4
+对于如何入门 Laravel , 找到了一篇还不错的教程. https://github.com/johnlui/Learn-Laravel-5/issues
 
 准备在了解PHP基础之后, 来跟着这个教程走一下, 走到一定程度, 应该就可以看懂现在的API的项目了.
 
 那么如何了解PHP基础呢?
-1. Headfirst PHP 书
-2. 七天学会PHP http://phpbook.phpxy.com/43512
-2. https://www.zhihu.com/question/39078661 燕十八回答的第一轮/第二轮迭代
+
+1.  Headfirst PHP 书
+
+2.  七天学会PHP http://phpbook.phpxy.com/43512
+
+2.  https://www.zhihu.com/question/39078661 燕十八回答的第一轮/第二轮迭代
 
 在学习PHP基础的过程中, 实际代码编写肯定又是免不了的. 虽然之前用的Homestead 建设过完整PHP环境的虚拟机, 但是感觉这个虚拟机应该是为Laravel定制的, 这次的代码编写就不用这个虚拟机了. 还是要先在自己的主机里配置一下基础的PHP环境.
 
