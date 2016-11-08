@@ -4,6 +4,7 @@
 ### 2016.11.08
 初步了解了 Laravel 的 MVC架构. 
 完成了简单 blog 项目(https://github.com/johnlui/Learn-Laravel-5/issues) 中的所有过程(登录、后台编辑、前台评论)都跑通了. 
+代码记录在 https://github.com/Hexor/learnlaravel5 中
 
 这个项目中附注的最后的大作业暂时没有进行.
 看了laravel-china.org上的初级任务清单, 感觉内容跟blog项目比较类似. 就不再重复一遍了.
