@@ -2,8 +2,13 @@
 > 这里将记录我自学 Laravel 的过程.
 
 ### 2016.11.08
-初步了解了 Laravel 的 MVC架构. 学习项目(https://github.com/johnlui/Learn-Laravel-5/issues) 中的所有过程都跑通了. 学习项目中大作业暂时没有进行.
-打算今天把 laravel-china.org 上的中级任务清单完成.
+初步了解了 Laravel 的 MVC架构. 
+完成了简单 blog 项目(https://github.com/johnlui/Learn-Laravel-5/issues) 中的所有过程(登录、后台编辑、前台评论)都跑通了. 
+
+这个项目中附注的最后的大作业暂时没有进行.
+看了laravel-china.org上的初级任务清单, 感觉内容跟blog项目比较类似. 就不再重复一遍了.
+
+打算今天先把 laravel-china.org 上的中级任务清单完成.
 
 ### 2016.11.07
 
