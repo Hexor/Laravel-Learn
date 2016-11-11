@@ -5,6 +5,7 @@
 今天从这个 技术社区 (http://larabase.com/collection/1/post/33) 里获取了一些关于 Laravel 的架构和基本概念知识. 
 
 看了这个社区里的文章, 再看别人的项目代码, 又看懂了一些东西:
+
 1.  用 Repository 模式来对 Controller 中的业务逻辑进行解耦
     1.  在 Repositories 文件夹下分别编写接口和其对应的实现
     2.  在 ServiceProvider 中的 register() 中, 绑定了接口
