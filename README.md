@@ -1,8 +1,28 @@
 
 > 这里将记录我自学 Laravel 的过程.
 
-## 2016.11.09
+## 2016.11.10
+今天从这个 技术社区 (http://larabase.com/collection/1/post/33) 里获取了一些关于 Laravel 的架构和基本概念知识. 
 
+看了这个社区里的文章, 再看别人的项目代码, 又看懂了一些东西:
+1.  用 Repository 模式来对 Controller 中的业务逻辑进行解耦
+    1.  在 Repositories 文件夹下分别编写接口和其对应的实现
+    2.  在 ServiceProvider 中的 register() 中, 绑定了接口
+2.  使用 Type-Hint 可以在很多场景, 比如 Controller 的构造函数中 注入对象
+3.  Service Provider/Container 是Laravel的核心机制. $app 是IOC容器, 有了这个容器, 就可以在任何地方解析得到注册过的类的实例. 而注册就是在 Service Provider 中完成的, Container 也就是容器.
+
+
+<br />
+    
+---
+<br />
+## 2016.11.09
+今天从网上找了一些项目代码来看, 虽然也是教学性质的项目, 但这些项目的复杂度已经不是前两天官方的简单教程的程度了.
+ 
+比如里面有一些概念还有代码的逻辑还是看不懂. 比如项目里各个文件夹里都是放了一些什么内容. 唯一知道的就是, 当一个请求发送过来之后, 这个服务器程序应该是从路由 route.php 开始工作的. 
+
+找到了一个比较不错的技术社区, 看了一些大概, 觉得应该有我这一段时间入门所需要的知识.
+明天继续研究一下. 社区地址是: http://larabase.com/collection/1/post/33
 
 
 <br />
