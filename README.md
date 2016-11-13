@@ -1,6 +1,32 @@
 
 > 这里将记录我自学 Laravel 的过程.
 
+## 2016.11.12
+
+
+
+<br />
+    
+---
+<br />
+
+## 2016.11.11
+今天从社区里下了一个开源代码, 在初始化项目的时候, 执行 php artisan db:seed 的时候, 报错
+
+    [InvalidArgumentException]
+    You requested 1 items, but there are only 0 items in the collection
+
+经过反复调试和查看文档, 发现这个错误是由于, 在填充数据时, 数据库A表的填充依赖B表的数据, 而B表此时还没有初始化, 是空表.
+
+所以需要将B表的初始化代码. 提前到A表的初始化代码之前, 就可以解决这个问题了.
+
+提交了一个 Pull Request 给代码所在的 Gitlab
+
+
+<br />
+    
+---
+<br />
 ## 2016.11.10
 今天从这个 技术社区 (http://larabase.com/collection/1/post/33) 里获取了一些关于 Laravel 的架构和基本概念知识. 
 
