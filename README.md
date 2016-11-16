@@ -7,18 +7,19 @@
 
 现在看来, 将数据导入到数据库中的方式是有2种
 
-1.   编写 Seeder 文件, 并在 DatabaseSeeder 中调用
-2.   在 Model Factories 中用 Fake 方法直接程序生成假数据
+1. 编写 Seeder 文件, 并在 DatabaseSeeder 中调用
+2. 在 Model Factories 中用 Fake 方法直接程序生成假数据
 
 两种方法的应用场景, 在我看来是这样的:
 
-1.   Seeder 文件中的假数据是非常具体的, 跟SQL语句非常类似, 比如 
+1. Seeder 文件中的假数据是非常具体的, 跟SQL语句非常类似, 比如
 
-    ['张三', '男', '29'], 导入这一条数据到某个表中
+       ['张三', '男', '29'], 导入这一条数据到某个表中
 
-2.   Factories 中的数据是随机生成的, 并且可以批量按照脚本的方式导入到数据库中, 比如           
+2. Factories 中的数据是随机生成的, 并且可以批量按照脚本的方式导入到数据库中, 比如
+      
+       'status' => $faker->numberBetween(0, 6),
 
-    'status' => $faker->numberBetween(0, 6),
 
 
 <br />
