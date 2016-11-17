@@ -20,14 +20,14 @@
     2. make() 方法创建模型，但不将它们保存至数据库
 6. 关于一次持久化多个模型到数据库
      
-    factory(App\User::class, 50)->create()->each(
-      function($u)
-        {
-          $u->posts()->save(
-            factory(App\Post::class)->make()
-          );
-        }
-    );
+        factory(App\User::class, 50)->create()->each(
+          function($u)
+            {
+              $u->posts()->save(
+                factory(App\Post::class)->make()
+              );
+            }
+        );
 
 7. 上面的代码中的 each 方法, 又涉及到了一个新的知识点, 即为 [Eloquent ORM 中的集合](http://laravelacademy.org/post/3031.html)的概念, 集合为我们提供了非常丰富的工具, 让我们能够方便的对集合中的元素进行操作. 单说 [each](http://laravelacademy.org/post/178.html#ipt_kb_toc_178_9), each会迭代集合中的每个数据项, 并将数据项传递给 each 内的函数并执行该函数
 
