@@ -15,9 +15,11 @@
     1. 通过 Model 类的名字, 一般是类名字的复数形式并加's', 即: Task 类 => 'tasks'表
     2. 在 Model 类中, 通过 protected $table = 'tasks'; 显式的将 Model 类与数据库表绑定
 4. 在 Model 类中的写的那些方法, 比如 belongTo hasMany 等, 这些方法有什么用?
-5. Eloquent 中的工厂中的几个函数的含义分别是什么? 
-    1. create() 方法创建模型，并在内部调用一次 save() 将创建的模型保存至数据库
+5. Eloquent 中的工厂中的用到的几个函数的含义分别是什么? 
+    1. create() 方法创建模型，并在内部调用一次 save() 将创建的模型保存至数据库, [相关资料1](https://laravel.com/docs/5.2/eloquent-relationships#inserting-related-models), [相关资料2](https://laravel.com/docs/5.2/testing#working-with-databases)
     2. make() 方法创建模型，但不将它们保存至数据库
+    3. create 和 make 都会将模型返回出来
+    4. [save()](https://laravel.com/docs/5.2/eloquent-relationships#inserting-related-models) 方法是在插入关联的数据模型时使用到
 6. 关于一次持久化多个模型到数据库
      
         factory(App\User::class, 50)->create()->each(
@@ -30,6 +32,7 @@
         );
 
 7. 上面的代码中的 each 方法, 又涉及到了一个新的知识点, 即为 [Eloquent ORM 中的集合](http://laravelacademy.org/post/3031.html)的概念, 集合为我们提供了非常丰富的工具, 让我们能够方便的对集合中的元素进行操作. 单说 [each](http://laravelacademy.org/post/178.html#ipt_kb_toc_178_9), each会迭代集合中的每个数据项, 并将数据项传递给 each 内的函数并执行该函数
+    
 
 
 
