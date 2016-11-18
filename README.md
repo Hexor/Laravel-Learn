@@ -14,13 +14,15 @@
 3. Laravel 是如何知道某个 Model 类是控制某个数据库表的? 有2种方式:
     1. 通过 Model 类的名字, 一般是类名字的复数形式并加's', 即: Task 类 => 'tasks'表
     2. 在 Model 类中, 通过 protected $table = 'tasks'; 显式的将 Model 类与数据库表绑定
-4. 在 Model 类中的写的那些方法, 比如 belongTo hasMany 等, 这些方法有什么用?
+4. 在 Model 类中的写的那些方法, 比如 belongTo hasMany 等, 这些方法有什么用? 
+    1. 可以说明数据库表之间的联系
+    2. 执行便捷和强大的查询, 方便的获取相关联的模型, 或者对这些模型进行操作
 5. Eloquent 中的工厂中的用到的几个函数的含义分别是什么? 
     1. create() 方法创建模型，并在内部调用一次 save() 将创建的模型保存至数据库, [相关资料1](https://laravel.com/docs/5.2/eloquent-relationships#inserting-related-models), [相关资料2](https://laravel.com/docs/5.2/testing#working-with-databases)
     2. make() 方法创建模型，但不将它们保存至数据库
     3. create 和 make 都会将模型返回出来
     4. [save()](https://laravel.com/docs/5.2/eloquent-relationships#inserting-related-models) 方法是在插入关联的数据模型时使用到
-6. 关于一次持久化多个模型到数据库
+6. 关于一次持久化多个模型到数据库, [Writing Seeders](https://laravel.com/docs/5.2/seeding#writing-seeders)
      
         factory(App\User::class, 50)->create()->each(
           function($u)
