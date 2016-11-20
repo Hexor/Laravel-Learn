@@ -64,6 +64,14 @@
 本来打算从假数据的导入开始这个项目, 在弄假数据的时候, 遇到了困难, 实际项目中的表很多, 而网上的很多教程的假数据导入都只是 1~2 个表, 之间的联系也比较少. 一直没找到多个表关联的时候, 假数据应该如何导入. 主要是涉及到4-5表之间的key是有互相的关联.
    
 
+同时, 今天在看 Laravel 文档的时候, 发现了出了一个中文的逻辑翻译错误, 文档是 [Laravel-China.org](https://laravel-china.org) 版本的, 发现他们是用github 来管理这些返回文档的.
+
+所以就提交了一个 [Issue](https://github.com/laravel-china/laravel-docs/issues/86) 和一个修复翻译错误的 [Pull Request](https://github.com/laravel-china/laravel-docs/pull/85), 他们反应很快, 一天不到这个 PR 就被 merge 了. 
+
+很高兴.
+
+<img src="https://assets-cdn.github.com/images/modules/profile/profile-first-pr.png" align="middle" width = "80%" />
+
 
 
 
